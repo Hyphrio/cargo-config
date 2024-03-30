@@ -112,7 +112,7 @@ fn list_config() -> io::Result<()> {
     File::open(&cargo_config_current)?.read_to_string(&mut current)?;
 
     fs::read_dir(path).and_then(|entry| {
-        println!("List of entries:");
+        println!("List of profiles:");
         for e in entry {
             if let Ok(entry) = e {
                 let os_file_name = entry.file_name();
