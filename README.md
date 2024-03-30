@@ -1,4 +1,4 @@
-# cargo-config
+# cargo-config (cargo-config-profiles)
 
 A small Cargo utility to switch config.toml profiles.
 
