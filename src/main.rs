@@ -121,7 +121,11 @@ fn list_config() -> io::Result<()> {
                 let name = names[0];
 
                 if name != "cargo-config-current" {
-                    println!("- {}", name)
+                    if name == &current {
+                        println!("- {} (current)", name)
+                    } else {
+                        println!("- {}", name)
+                    }
                 }
             }
         }
