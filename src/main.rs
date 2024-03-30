@@ -59,7 +59,7 @@ fn main() -> miette::Result<()> {
             edit_config(&editor, &value)
                 .and_then(|_| {
                     Ok(println!(
-                        "Success:   {}  Opened {editor} at {value}",
+                        "Success:   {}  Opened {value} at {editor}",
                         "✓".green()
                     ))
                 })
