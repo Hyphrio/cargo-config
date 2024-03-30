@@ -3,6 +3,8 @@ name = "cargo-config-profiles"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
+description = "Switch cargo configurations with ease"
+repository = "https://github.com/Hyphrio/cargo-config-profiles"
 
 [dependencies]
 clap = { version = "4.5.4", features = ["derive"] }
