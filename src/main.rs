@@ -94,7 +94,7 @@ fn switch_config(name: &str) -> io::Result<()> {
     let mut cargo = resolve_cargo_dir()?;
     cargo.push("config.toml");
 
-    remove_file(&cargo)?;
+    let _ = remove_file(&cargo);
 
     path.push(format!("{name}.toml"));
 
